@@ -2,7 +2,7 @@
 
 SCRPTVER=24072714.24
 WD_NOW=$(pwd)
-GIT_RAWURL="https://raw.githubusercontent.com/arcosaka/arc_2024/main/raspi/"
+GIT_RAWURL="https://raw.githubusercontent.com/arcosaka/arc_2024/main/raspi"
 echo "setup.sh <$(hostname)> Ver($SCRPTVER)"
 
 cd ~/
