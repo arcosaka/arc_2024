@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRPTVER=24072715.53
+SCRPTVER=24080321.24
 WD_NOW=$(pwd)
 GIT_RAWURL="https://raw.githubusercontent.com/arcosaka/arc_2024/main/raspi"
 echo "setup.sh <$(hostname)> Ver($SCRPTVER)"
@@ -50,7 +50,7 @@ echo "****************"
 echo "*->apt update install" \
 && sudo apt -y upgrade \
 && sudo apt -y install \
-   git nano avahi-daemon apt-utils bash-completion bind9-host dnsutils fonts-ipaexfont cmake libjpeg-dev gcc g++ git v4l-utils python3 python3-pip \
+   git nano avahi-daemon apt-utils bash-completion bind9-host dnsutils fonts-ipaexfont cmake libjpeg-dev gcc g++ git v4l-utils python3 python3-pip screen \
 && echo "OK" \
 || exit 2
 
@@ -87,5 +87,5 @@ echo "*->git clone arcosaka_2024" \
 
 cd $WD_NOW
 
-echo "Reboot the system to reflect the settings."
+echo "Please reboot the system."
 echo "end setup.sh"
